@@ -11,6 +11,7 @@ void main() async {
   Loggy.initLoggy(
     logPrinter: const PrettyPrinter(),
   );
+  print('message');
 
   final dio = Dio();
   dio.interceptors.add(LoggyDioInterceptor(responseBody: false));
